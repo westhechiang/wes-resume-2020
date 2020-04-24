@@ -6,8 +6,8 @@ export const Paper = ({ children }: FlexProps) => (
     bg="white"
     boxShadow="rgba(0, 0, 0, 0.2) 0px 6px 14px;"
     flexDirection="column"
-    width={['100%', '100%', '8.5 in']}
-    maxWidth={['100%', '100%', 794]}
+    width={['100%', '100%', '10.5 in']}
+    maxWidth={['100%', '100%', 1000]}
     height={['100%']}
     minHeight="11in"
     position="relative"

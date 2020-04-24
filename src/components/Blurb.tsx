@@ -15,7 +15,7 @@ export const Blurb = () => {
       borderRadius={10}
       zIndex={10}
     >
-      <Text color="body" fontFamily="body" textAlign="center" fontSize="xs">
+      <Text color="white" fontFamily="body" textAlign="center" fontSize="xs">
         Made by Wes Chiang, built with{' '}
         <Link
           textDecoration="italic"

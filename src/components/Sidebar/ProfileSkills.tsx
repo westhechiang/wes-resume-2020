@@ -51,7 +51,7 @@ export const ProfileSkills = ({ skills }: ProfileSkillsProps) => (
                     m={0}
                     fontWeight="bold"
                     fontFamily="body"
-                    color="body"
+                    color="white"
                     fontSize="xs"
                   >
                     {item}

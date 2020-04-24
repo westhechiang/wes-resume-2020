@@ -40,10 +40,12 @@
         "Serverless",
         "AWS Lambdas",
         "Node",
+        "Netlify",
+        "Jamstack",
+        "Gatsby",
         "Webpack",
         "Docker",
-        "Grunt",
-        "Gulp",
+        "Twilio",
         "Salesforce",
         "Git"
       ],
@@ -61,7 +63,7 @@
     {
       "name": "Mama's Gotchu",
       "url": "https://app.mamasgotchu.com",
-      "notes": "When COVID19 hit, my chef friends had to shutter their catering business. To survive, they started doing meal deliveries. Operations and customer management was a nightmare and so I led a team of 3 engineers to build out a kitchen operations management web application for them. We currently have 60+ customers and regularly deliver ~130 meals every week! Built with Typescript, React and Apollo (GraphQL) and Serverless."
+      "notes": "When COVID19 hit, my chef friends had to shutter their catering business. To survive, they started doing meal deliveries. Operations and customer management was a nightmare and so I led a team of 3 engineers to build out a kitchen operations management web application for them. We currently have 60+ customers and regularly deliver ~130 meals every week! Built with Typescript, React, Twilio, Apollo (GraphQL) and Serverless."
     }
   ],
   "experience": [
@@ -76,7 +78,7 @@
       },
       "accomplishments": [
         "Worked with leadership to define engineering and product roadmap. Ran sprint planning, backlog grooming, gathered requirements and wrote tickets. Grew engineering team by leading hiring and establishing engineering best practices.",
-        "Led the development of internal insights web application (Dapper) that was pivotal in empowering Creative Strategists to find and replicate top performing ads, which increased client retention and spending; leveraged Hasura to generate a GraphQL endpoint from an existing Postgres infrastructure, exposing Facebook data for the web application to consume.",
+        "Led the development of internal insights web application (built with React, Typescript, and GraphQL) that was pivotal in empowering Creative Strategists to find and replicate top performing ads, which increased client retention and spending; leveraged Hasura to generate a GraphQL endpoint from an existing Postgres infrastructure, exposing Facebook data for the web application to consume.",
         "Introduced and trained engineers in React, GraphQL, Typescript, and Test Driven Development.",
         "Established automated CI/CD pipeline using CircleCI with full end-to-end testing using Cypress.io; increased velocity from 1 deploy a week to ~8 - 10 a week."
       ]
@@ -108,10 +110,10 @@
         "end": "12/2018"
       },
       "accomplishments": [
-        "Identified opportunities for web team to help iOS and Android teams to meet release expectations; built out MVP features in webviews for Wag! mobile applications",
-        "Completely re-architected legacy web app, drastically improving stability and customer experience (0 downtime since re-architecture); migrated back end off of Firebase",
+        "Identified opportunities for web team to help iOS and Android teams to meet release expectations; built out MVP features in React to create webviews for Wag! mobile applications",
+        "Completely re-architected legacy React web app, drastically improving stability and customer experience (0 downtime since re-architecture); migrated back end off of Firebase",
         "Built out entire suite of end-to-end tests with Cypress.io for legacy web app",
-        "Built out entire CI pipeline to facilitate test automation; spins up a local instance of wagWebApp and wagAPI via Docker and runs entire suite of tests. Increased developer confidence and awareness by integrating pipeline results with Slack"
+        "Built out entire CI pipeline in GitLab to facilitate test automation; spins up a local instance of wagWebApp and wagAPI via Docker and runs entire suite of tests. Increased developer confidence and awareness by integrating pipeline results with Slack"
       ]
     },
     {

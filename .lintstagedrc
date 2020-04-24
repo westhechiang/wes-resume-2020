@@ -1,0 +1,6 @@
+{
+  "**/*.+(js|jsx|ts|tsx)": [
+    "prettier --write",
+    "yarn lint",
+  ]
+}

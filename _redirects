@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://wchiang.netlify.app/* https://www.wchiang/:splat 301!

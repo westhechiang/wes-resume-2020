@@ -1,0 +1,159 @@
+{
+  "profile": {
+    "name": {
+      "firstName": "Wesley",
+      "lastName": "Chiang",
+      "nickName": "Wes"
+    },
+    "title": "Lead Software Engineer",
+    "contact": {
+      "email": "westhechiang@gmail.com",
+      "github": "https://bit.ly/2zrvjiH",
+      "linkedIn": "https://bit.ly/2xOviUK",
+      "city": "Cypress Park, CA"
+    },
+    "summary": {
+      "highlight": "I'm a leader who is passionate about building happy productive teams and writing scaleable & maintainable code",
+      "details": [
+        "A quick learner with experience in vetting and working with new technologies to find the best solutions to problems",
+        "A strong team player and comfortable with taking on leadership roles",
+        "Business-minded and know how to prioritize projects and tasks to maximize benefits to the organization",
+        "Accountable; I execute quickly and with high quality; I identify bottlenecks, resolve them, and keep projects moving forward"
+      ]
+    },
+    "skills": {
+      "languages": [
+        "JavaScript (ES6)",
+        "Python",
+        "CSS/SASS",
+        "APEX",
+        "Visualforce"
+      ],
+      "database": [
+        "PostgreSQL",
+        "MySQL"
+      ],
+      "technologies": [
+        "React",
+        "GraphQL",
+        "Apollo",
+        "Serverless",
+        "AWS Lambdas",
+        "Node",
+        "Webpack",
+        "Docker",
+        "Grunt",
+        "Gulp",
+        "Salesforce",
+        "Git"
+      ],
+      "hobbies": [
+        "Woodworking",
+        "Gardening",
+        "Camping",
+        "Cooking",
+        "Surfing",
+        "Growing Cannabis"
+      ]
+    }
+  },
+  "projects": [
+    {
+      "name": "Mama's Gotchu",
+      "url": "https://app.mamasgotchu.com",
+      "notes": "When COVID19 hit, my chef friends had to shutter their catering business. To survive, they started doing meal deliveries. Operations and customer management was a nightmare and so I led a team of 3 engineers to build out a kitchen operations management web application for them. We currently have 60+ customers and regularly deliver ~130 meals every week! Built with Typescript, React and Apollo (GraphQL) and Serverless."
+    }
+  ],
+  "experience": [
+    {
+      "id": 0,
+      "title": "Lead Software Engineer",
+      "location": "Downtown Los Angeles, CA",
+      "company": "Tubescience",
+      "duration": {
+        "start": "06/2019",
+        "end": "Current"
+      },
+      "accomplishments": [
+        "Worked with leadership to define engineering and product roadmap. Ran sprint planning, backlog grooming, gathered requirements and wrote tickets. Grew engineering team by leading hiring and establishing engineering best practices.",
+        "Led the development of internal insights web application (Dapper) that was pivotal in empowering Creative Strategists to find and replicate top performing ads, which increased client retention and spending; leveraged Hasura to generate a GraphQL endpoint from an existing Postgres infrastructure, exposing Facebook data for the web application to consume.",
+        "Introduced and trained engineers in React, GraphQL, Typescript, and Test Driven Development.",
+        "Established automated CI/CD pipeline using CircleCI with full end-to-end testing using Cypress.io; increased velocity from 1 deploy a week to ~8 - 10 a week."
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Lead Software Engineer",
+      "location": "West Hollywood, CA",
+      "company": "Wag!",
+      "duration": {
+        "start": "12/2018",
+        "end": "06/2019"
+      },
+      "accomplishments": [
+        "Led a team of 5 engineers; defined web engineering code and process standards; improved communication across NorCal and SoCal web engineering teams",
+        "Improved release velocity while reducing number of bugs released to production; averaging 10 releases per week, up from ~3 per week",
+        "Built the web team 'canary' test suite; ensures back end changes do not adversely affect endpoints the web team uses by automatically testing endpoints and alerting the team of breaking changes",
+        "Led the migration from legacy Django web application (wagwalking.com) to GatsbyJS; drastically improving SEO and page performance reducing page load time by more than 300%",
+        "Created Wag!'s shared React Component library using React, Styled Components, Styled System, and Lerna with over 80 components and counting"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Full Stack Engineer",
+      "location": "West Hollywood, CA",
+      "company": "Wag!",
+      "duration": {
+        "start": "07/2018",
+        "end": "12/2018"
+      },
+      "accomplishments": [
+        "Identified opportunities for web team to help iOS and Android teams to meet release expectations; built out MVP features in webviews for Wag! mobile applications",
+        "Completely re-architected legacy web app, drastically improving stability and customer experience (0 downtime since re-architecture); migrated back end off of Firebase",
+        "Built out entire suite of end-to-end tests with Cypress.io for legacy web app",
+        "Built out entire CI pipeline to facilitate test automation; spins up a local instance of wagWebApp and wagAPI via Docker and runs entire suite of tests. Increased developer confidence and awareness by integrating pipeline results with Slack"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Full Stack Engineer",
+      "location": "Los Angeles, CA",
+      "company": "RealtyMogul.com",
+      "duration": {
+        "start": "01/2017",
+        "end": "07/2018"
+      },
+      "accomplishments": [
+        "Designed and built a suite of microservices that ingests and normalizes 3rd party data from multiple sources, and RESTful API's for user interfaces built in React to interact with",
+        "Templatize the creation of microservices using Cookiecutter in order to maximize consistency and efficiency",
+        "Managed the evaluation of various open source front-end technologies, ultimately implementing and training a team of 7 engineers on React, Redux, Redux-Saga, and Styled-Components",
+        "Worked closely with in-house designers to create and maintain RealtyMogul.com's core UI component library using Storybook; maximizing code reuse, consistency, and team efficiency",
+        "Established front-end coding standards and best practices such as Test Driven Development; implemented linters and tests that were automatically run on code commit, which prevented failing code from being introduced to the code base and ultimately, fewer bugs for QA",
+        "Overhauled front-end tooling / build system, decreasing front-end code compile time from 10s to ~0.2s and drastically improving developer experience"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Salesforce Technical Architect",
+      "location": "Los Angeles, CA",
+      "company": "RealtyMogul.com",
+      "duration": {
+        "start": "02/2015",
+        "end": "01/2017"
+      },
+      "accomplishments": [
+        "Gathered requirements across multiple cross-functional business orgs; completely re-implemented RealtyMogul.com's Salesforce instance with Custom Objects, and custom APEX code to better match their unique business requirements",
+        "Established Salesforce.com development and administration best practices to ensure long-term maintainability and ease of customization",
+        "Resolved system-wide synchronization failures between Drupal and Salesforce and improved site performance and reliability by migrating all data synchronizations from synchronous to asynchronous",
+        "Built custom GUI for Salesforce Administrators to better control, monitor, and manage the synchronization of data between Drupal and Salesforce",
+        "Built custom Round Robin lead distribution system which randomly and fairly assigned new leads across 4 sales teams and over 20 sales representatives; also implemented an administrative interface for Salesforce admins to add and modifying lead distribution rules without requiring dev resources or additional deployments"
+      ]
+    }
+  ],
+  "education": {
+    "school": "UC Berkeley",
+    "duration": "2008 - 2011",
+    "location": "Berkeley, CA",
+    "degree": "BA, Political Economics"
+  }
+}

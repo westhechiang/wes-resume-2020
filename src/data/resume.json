@@ -23,52 +23,101 @@
     },
     "skills": {
       "languages": [
-        "JavaScript (ES6)",
-        "Python",
+        "JavaScript / Typescript",
+        "Terraform",
         "CSS/SASS",
         "APEX",
         "Visualforce"
       ],
-      "database": [
-        "PostgreSQL",
-        "MySQL"
-      ],
+      "database": ["PostgreSQL", "MySQL"],
       "technologies": [
-        "React",
-        "GraphQL",
         "Apollo",
-        "Serverless",
-        "AWS Lambdas",
-        "Node",
-        "Netlify",
-        "Jamstack",
-        "Gatsby",
-        "Webpack",
+        "AWS",
         "Docker",
-        "Twilio",
+        "Gatsby",
+        "GraphQL",
+        "Jamstack",
+        "Netlify",
+        "Node",
+        "NX",
+        "React",
         "Salesforce",
-        "Git"
+        "Serverless",
+        "Twilio",
+        "Webpack"
       ],
       "hobbies": [
-        "Woodworking",
-        "Gardening",
         "Camping",
         "Cooking",
-        "Surfing",
-        "Growing Cannabis"
+        "Gardening",
+        "Hydroponics",
+        "Woodworking",
+        "Vermicomposting",
+        "3D Printing",
+        "3D Modeling"
       ]
     }
   },
   "projects": [
     {
+      "name": "Personal Garden Hydroponics",
+      "notes": "In a collaborative venture with my wife, we purchased an 8000 sq. ft. lot and embarked on transforming it into an urban farm-to-table event space. At the heart of our project is the garden, where I designed and implemented a hydroponics system, responsible for growing our produce for events. This system is driven by a Raspberry Pi, which I programmed to provide real-time control, monitoring, and optimization of the growing conditions. This digital farm management not only ensures the quality and freshness of our produce, but also encapsulates our vision of integrating technology and sustainability in urban agriculture."
+    },
+    {
       "name": "Mama's Gotchu",
       "url": "https://app.mamasgotchu.com",
-      "notes": "When COVID19 hit, my chef friends had to shutter their catering business. To survive, they started doing meal deliveries. Operations and customer management was a nightmare and so I led a team of 3 engineers to build out a kitchen operations management web application for them. We currently have 60+ customers and regularly deliver ~130 meals every week! Built with Typescript, React, Twilio, Apollo (GraphQL) and Serverless."
+      "notes": "When COVID19 hit, my chef friends had to shutter their catering business. To survive, they started doing meal deliveries. Operations and customer management was a nightmare and so I led a team of 3 engineers to build out a kitchen operations management web application for them. At its peak we had 60+ customers and regularly delivered ~130 meals every week! Built with Typescript, React, Twilio, Apollo (GraphQL) and Serverless."
     }
   ],
   "experience": [
     {
       "id": 0,
+      "title": "Lead Software Engineer - Foundational Technologies",
+      "location": "Culver City, CA",
+      "company": "Sweetgreen",
+      "duration": {
+        "start": "05/2022",
+        "end": "Current"
+      },
+      "accomplishments": [
+        "Developed a proof-of-concept that demonstrated the potential for utilizing a CRM for managing operations at Sweetgreen, ultimately convincing leadership to adopt the platform. Currently leading the migration efforts",
+        "Collaborated with management to identify and address spikes in engineering resource costs (e.g. AWS, CircleCI, Datadog), successfully reducing costs by ~30% while maintaining the same level of developer experience.",
+        "Conduct regular workshops to educate engineers on best practices and to introduce new features released by the Foundational Tech team, fostering a culture of continuous learning and improvement. A recent example includes a session on End-to-End (E2E) testing using the Playwright framework, showing engineers how to write tests that simulate user interactions with our application, and how these tests can be run in parallel to reduce test execution time from 2 hours to 10 minutes."
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Sr. Software Engineer",
+      "location": "Culver City, CA",
+      "company": "Sweetgreen",
+      "duration": {
+        "start": "08/2020",
+        "end": "05/2022"
+      },
+      "accomplishments": [
+        "Recognized the inefficiencies of having ~300 GitHub repositories and developers working in silos; proposed and led the transition to a monorepo using the NX framework, resulting in a significant increase in engineering velocity and enabling ~10 releases per day, up from once a month. The move to the monorepo also had a significant cultural impact as it was instrumental in helping the engineering team stay positive, productive and collaborative during a turbulent time.",
+        "Led the 'replatforming' initiative at Sweetgreen, transitioning from native development (iOS / Android) and the Ember web framework to React Native over a period of ~1 year. This transition not only yielded massive productivity gains for developers but also drastically improved our customer's experience, as evidenced by our Android app rating improving from 1 star to 5 stars in the Google Play Store.",
+        "Utilizing the Serverless framework, extracted the most heavily used API, location search, from our monolith backend into its own service. This dramatically reduced latency times for customers searching for a Sweetgreen location, significantly enhancing the customer experience."
+      ]
+    },
+    {
+      "id": 0,
+      "title": "Lead Software Engineer",
+      "location": "Downtown Los Angeles, CA",
+      "company": "Tubescience",
+      "duration": {
+        "start": "06/2019",
+        "end": "08/2022"
+      },
+      "accomplishments": [
+        "Worked with leadership to define engineering and product roadmap. Ran sprint planning, backlog grooming, gathered requirements and wrote tickets. Grew engineering team by leading hiring and establishing engineering best practices.",
+        "Led the development of internal insights web application (built with React, Typescript, and GraphQL) that was pivotal in empowering Creative Strategists to find and replicate top performing ads, which increased client retention and spending; leveraged Hasura to generate a GraphQL endpoint from an existing Postgres infrastructure, exposing Facebook data for the web application to consume.",
+        "Introduced and trained engineers in React, GraphQL, Typescript, and Test Driven Development.",
+        "Established automated CI/CD pipeline using CircleCI with full end-to-end testing using Cypress.io; increased velocity from 1 deploy a week to ~8 - 10 a week."
+      ]
+    },
+    {
+      "id": 2,
       "title": "Lead Software Engineer",
       "location": "Downtown Los Angeles, CA",
       "company": "Tubescience",
@@ -84,7 +133,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 3,
       "title": "Lead Software Engineer",
       "location": "West Hollywood, CA",
       "company": "Wag!",
@@ -101,7 +150,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 4,
       "title": "Full Stack Engineer",
       "location": "West Hollywood, CA",
       "company": "Wag!",
@@ -117,7 +166,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 5,
       "title": "Full Stack Engineer",
       "location": "Los Angeles, CA",
       "company": "RealtyMogul.com",
@@ -135,7 +184,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 6,
       "title": "Salesforce Technical Architect",
       "location": "Los Angeles, CA",
       "company": "RealtyMogul.com",

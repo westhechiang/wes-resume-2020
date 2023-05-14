@@ -20,9 +20,9 @@ export const Projects = () => {
   return (
     <Box mb={4}>
       <Heading fontSize="md" color="heading">
-        Side Project
+        Side Projects
       </Heading>
-      <Stack mt={2} direction="column" spacing={2}>
+      <Stack mt={2} direction="column" spacing={4}>
         {projects.map(project => (
           <Stack key={project.name} spacing={2}>
             <Box>
@@ -33,21 +33,23 @@ export const Projects = () => {
                 {project.name}
               </Text>
             </Box>
-            <Box>
-              <Heading color="heading" fontSize="xs" lineHeight={1}>
-                Url
-              </Heading>
-              <Link
-                href={project.url}
-                target="_blank"
-                fontFamily="body"
-                fontSize="sm"
-                color="body"
-                lineHeight={1}
-              >
-                {project.url}
-              </Link>
-            </Box>
+            {project.url && (
+              <Box>
+                <Heading color="heading" fontSize="xs" lineHeight={1}>
+                  Url
+                </Heading>
+                <Link
+                  href={project.url}
+                  target="_blank"
+                  fontFamily="body"
+                  fontSize="sm"
+                  color="body"
+                  lineHeight={1}
+                >
+                  {project.url}
+                </Link>
+              </Box>
+            )}
             <Box>
               <Heading color="heading" fontSize="xs" lineHeight={1}>
                 Notes

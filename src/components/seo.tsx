@@ -79,7 +79,16 @@ const SEO: React.FC<SEOPropsInterface> = ({
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      {/* Preconnect to external domains for better performance */}
+      <link rel="preconnect" href="https://images.unsplash.com" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="anonymous"
+      />
+    </Helmet>
   );
 };
 

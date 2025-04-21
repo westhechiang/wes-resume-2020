@@ -32,6 +32,7 @@
       "database": ["PostgreSQL", "MySQL"],
       "technologies": [
         "Apollo",
+        "AI",
         "AWS",
         "Docker",
         "Gatsby",
@@ -50,6 +51,9 @@
         "Camping",
         "Cooking",
         "Gardening",
+        "Welding",
+        "Mycology",
+        "Plant Tissue Culture",
         "Hydroponics",
         "Woodworking",
         "Vermicomposting",
@@ -72,12 +76,30 @@
   "experience": [
     {
       "id": 0,
-      "title": "Lead Software Engineer - Foundational Technologies",
+      "title": "Engineering Manager - Foundational Technologies (Platform)",
+      "location": "Culver City, CA",
+      "company": "Sweetgreen",
+      "duration": {
+        "start": "06/2023",
+        "end": "Current"
+      },
+      "accomplishments": [
+        "Hired 2 Software Engineers, 1 L5 and 1 L6 to join our platform team. Promoted the L5 to L6 after 8 months of joining the team and has been a key contributor to the team's success.",
+        "Oversaw the migration of our CI platform from CircleCI to Github Actions, which significantly reduced our CI costs and increased our velocity.",
+        "Brokered relationships between Engineering and Security + Retail Tech, helping to align on priorities and goals. In addition to supporting our software engineers, Foundational Technology also supports the Security and Retail Tech teams.",
+        "AWS, Datadog, and Github owner for Sweetgreen's AWS account, responsible for all resources and costs.",
+        "Responsible for all SRE, DX, Infrastructure, and Monorepo (NX) efforts for Sweetgreen.",
+        "Introduced and rolled out CursorAI to the entire engineering team, which increased developer productivity by 30%."
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Lead Software Engineer - Foundational Technologies (Platform)",
       "location": "Culver City, CA",
       "company": "Sweetgreen",
       "duration": {
         "start": "05/2022",
-        "end": "Current"
+        "end": "06/2023"
       },
       "accomplishments": [
         "Developed a proof-of-concept that demonstrated the potential for utilizing a CRM for managing operations at Sweetgreen, ultimately convincing leadership to adopt the platform. Currently leading the migration efforts",
@@ -86,7 +108,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 2,
       "title": "Sr. Software Engineer",
       "location": "Culver City, CA",
       "company": "Sweetgreen",
@@ -101,7 +123,7 @@
       ]
     },
     {
-      "id": 0,
+      "id": 3,
       "title": "Lead Software Engineer",
       "location": "Downtown Los Angeles, CA",
       "company": "Tubescience",
@@ -117,7 +139,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 4,
       "title": "Lead Software Engineer",
       "location": "Downtown Los Angeles, CA",
       "company": "Tubescience",
@@ -133,7 +155,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 5,
       "title": "Lead Software Engineer",
       "location": "West Hollywood, CA",
       "company": "Wag!",
@@ -150,7 +172,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 6,
       "title": "Full Stack Engineer",
       "location": "West Hollywood, CA",
       "company": "Wag!",
@@ -166,7 +188,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 7,
       "title": "Full Stack Engineer",
       "location": "Los Angeles, CA",
       "company": "RealtyMogul.com",
@@ -184,7 +206,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 8,
       "title": "Salesforce Technical Architect",
       "location": "Los Angeles, CA",
       "company": "RealtyMogul.com",

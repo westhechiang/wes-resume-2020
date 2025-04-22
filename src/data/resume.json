@@ -3,9 +3,10 @@
     "name": {
       "firstName": "Wesley",
       "lastName": "Chiang",
-      "nickName": "Wes"
+      "nickName": "Wes",
+      "chineseName": "江唯豪"
     },
-    "title": "Lead Software Engineer",
+    "title": "Engineering Manager - Foundational Technologies (Platform)",
     "contact": {
       "email": "westhechiang@gmail.com",
       "github": "https://bit.ly/2zrvjiH",

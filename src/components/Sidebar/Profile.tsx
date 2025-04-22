@@ -22,6 +22,7 @@ export const Profile = () => {
           name {
             lastName
             nickName
+            chineseName
           }
           title
           contact {

@@ -5,9 +5,14 @@ import * as React from 'react';
 export interface ProfileNameProps {
   nickName: string;
   lastName: string;
+  chineseName?: string;
 }
 
-export const ProfileName = ({ nickName, lastName }: ProfileNameProps) => (
+export const ProfileName = ({
+  nickName,
+  lastName,
+  chineseName,
+}: ProfileNameProps) => (
   <Flex width="100%" flexDirection="column" alignItems="center" py={4}>
     <Text
       fontFamily="heading"
@@ -28,5 +33,20 @@ export const ProfileName = ({ nickName, lastName }: ProfileNameProps) => (
     >
       {lastName}
     </Text>
+    {chineseName && (
+      <Text
+        lineHeight={1.5}
+        color="heading"
+        fontFamily="heading"
+        fontSize="lg"
+        mt={2}
+      >
+        {chineseName}
+      </Text>
+    )}
   </Flex>
 );
+
+ProfileName.defaultProps = {
+  chineseName: '',
+};

@@ -1,0 +1,54 @@
+{
+  "profile": {
+    "title": "工程经理 - 基础技术（平台）",
+    "contact": {
+      "email": "电子邮件",
+      "github": "GitHub",
+      "linkedIn": "领英",
+      "city": "城市"
+    },
+    "summary": {
+      "title": "简介",
+      "highlight": "我是一位热衷于建立高效工程团队和帮助企业扩展的领导者"
+    },
+    "skills": {
+      "languages": "编程语言",
+      "database": "数据库",
+      "technologies": "技术",
+      "hobbies": "兴趣爱好"
+    }
+  },
+  "projects": {
+    "title": "项目",
+    "name": "名称",
+    "url": "网址",
+    "notes": "说明",
+    "viewProject": "查看项目"
+  },
+  "experience": {
+    "title": "工作经验",
+    "present": "至今",
+    "company": "公司",
+    "location": "地点",
+    "accomplishments": "成就"
+  },
+  "education": {
+    "title": "教育背景",
+    "school": "学校",
+    "duration": "时间",
+    "location": "地点",
+    "degree": "学位"
+  },
+  "language": {
+    "english": "English",
+    "chinese": "中文"
+  },
+  "meta": {
+    "title": "简历",
+    "description": "江唯豪的专业简历"
+  },
+  "notFound": {
+    "title": "页面未找到",
+    "message": "您正在寻找的页面不存在或已被移动。"
+  }
+}

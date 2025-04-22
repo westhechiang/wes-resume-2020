@@ -6,6 +6,7 @@ module.exports = {
     title: `Wesley Chiang`,
     description: `Wesley Chiang resume 2020`,
     author: `Wesley Chiang`,
+    siteUrl: `https://wchiang.com`,
   },
   plugins: [
     `gatsby-plugin-chakra-ui`,

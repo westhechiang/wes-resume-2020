@@ -30,9 +30,16 @@ export const IconLabel = ({
         height={iconSize}
         mr={1}
         mb={orientation === 'horizontal' ? 0 : 1}
+        color="navy.500"
       />
     )}
-    <Text m={0} fontFamily="body" fontSize="xs" color="body">
+    <Text
+      m={0}
+      fontFamily="body"
+      fontSize="xs"
+      color="gray.700"
+      fontWeight="medium"
+    >
       {label}
     </Text>
   </Flex>

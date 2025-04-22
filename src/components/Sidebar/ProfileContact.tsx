@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Flex, Text, Link } from '@chakra-ui/core';
+import { useLanguage } from '../../context/LanguageContext';
 
 export interface ProfileContactProps {
   contact: {
@@ -7,52 +8,77 @@ export interface ProfileContactProps {
     github: string;
     linkedIn: string;
     city: string;
+    zh_city?: string;
   };
 }
 
-export const ProfileContact = ({ contact }: ProfileContactProps) => (
-  <Flex flexDirection="column" width={[200, 200, '100%']} alignItems="center">
-    {Object.entries(contact).map((entry, index) => {
-      return (
-        <Flex
-          key={entry[0]}
-          width={['100%']}
-          pb={2}
-          justifyContent={['flex-start']}
-          alignItems={['center', 'flex-start']}
-        >
+export const ProfileContact = ({ contact }: ProfileContactProps) => {
+  const { language, t } = useLanguage();
+  const isZh = language === 'zh';
+
+  // Process contact entries for display
+  const displayContact = Object.entries(contact).filter(([key]) => {
+    // Don't show zh_* fields directly
+    return !key.startsWith('zh_');
+  });
+
+  return (
+    <Flex flexDirection="column" width={[200, 200, '100%']} alignItems="center">
+      {displayContact.map(([key, value]) => {
+        // Get label translation for the field
+        const label = t(`profile.contact.${key}`, key);
+
+        // For city field, use zh_city if in Chinese mode and available
+        const displayValue =
+          key === 'city' && isZh && contact.zh_city ? contact.zh_city : value;
+
+        return (
           <Flex
-            flexDirection="column"
-            justifyContent="flex-start"
-            alignItems="flex-start"
+            key={key}
+            width={['100%']}
+            pb={2}
+            justifyContent={['flex-start']}
+            alignItems={['center', 'flex-start']}
           >
-            <Text
-              fontFamily="heading"
-              fontSize="xs"
-              fontWeight="bold"
-              color="body"
-              lineHeight={1}
-              textTransform="capitalize"
+            <Flex
+              flexDirection="column"
+              justifyContent="flex-start"
+              alignItems="flex-start"
             >
-              {entry[0]}
-            </Text>
-            <Text fontFamily="body" fontSize="sm" color="body" lineHeight={1}>
-              {entry[1].indexOf('https://') !== -1 ? (
-                <Link
-                  href={entry[1]}
-                  color="body"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {entry[1]}
-                </Link>
-              ) : (
-                entry[1]
-              )}
-            </Text>
+              <Text
+                fontFamily="heading"
+                fontSize="xs"
+                fontWeight="bold"
+                color="navy.600"
+                lineHeight={1}
+                textTransform="capitalize"
+              >
+                {label}
+              </Text>
+              <Text
+                fontFamily="body"
+                fontSize="sm"
+                color="gray.700"
+                lineHeight={1}
+              >
+                {displayValue.indexOf &&
+                displayValue.indexOf('https://') !== -1 ? (
+                  <Link
+                    href={displayValue}
+                    color="blue.500"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {displayValue}
+                  </Link>
+                ) : (
+                  displayValue
+                )}
+              </Text>
+            </Flex>
           </Flex>
-        </Flex>
-      );
-    })}
-  </Flex>
-);
+        );
+      })}
+    </Flex>
+  );
+};

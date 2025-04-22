@@ -7,20 +7,30 @@
       "chineseName": "江唯豪"
     },
     "title": "Engineering Manager - Foundational Technologies (Platform)",
+    "zh_title": "工程经理 - 基础技术（平台）",
     "contact": {
       "email": "westhechiang@gmail.com",
       "github": "https://bit.ly/2zrvjiH",
       "linkedIn": "https://bit.ly/2xOviUK",
-      "city": "North East Los Angeles, CA"
+      "city": "North East Los Angeles, CA",
+      "zh_city": "美国加州洛杉矶东北部"
     },
     "summary": {
-      "highlight": "I'm a leader who is passionate about building happy productive teams and writing scaleable & maintainable code",
+      "highlight": "I'm a leader who is passionate about building happy productive engineering teams, and helping businesses scale",
+      "zh_highlight": "我是一位热衷于打造高效工程团队并帮助企业扩展的领导者",
       "details": [
-        "A quick learner with experience in vetting and working with new technologies to find the best solutions to problems",
+        "A quick learner with experience in vetting and working with new technologies to find the most economically and technically sound solutions to problems",
         "A strong team player and comfortable leading teams and projects",
         "Business-minded and know how to prioritize projects and tasks to maximize benefits to the organization",
-        "Accountable; I execute quickly and with high quality; I identify bottlenecks, resolve them, and keep projects moving forward",
-        "A strong advocate for developer experience, tooling, automation and AI"
+        "A strong advocate for developer experience, tooling, automation and AI",
+        "Accountable; I execute quickly and with high quality; I identify bottlenecks, resolve them, and keep projects moving forward"
+      ],
+      "zh_details": [
+        "一位快速学习者，有丰富的验证和使用新技术解决问题的经验",
+        "一位优秀的团队成员，能够舒适地领导团队和项目",
+        "具有商业头脑，知道如何优先安排项目和任务以最大限度地提高组织效益",
+        "开发者体验、工具、自动化和人工智能的坚定支持者",
+        "负责任；我能够快速高质量地执行；我能识别瓶颈，解决它们，并推动项目向前发展"
       ]
     },
     "skills": {
@@ -29,9 +39,19 @@
         "Terraform",
         "CSS/SASS",
         "APEX",
-        "Visualforce"
+        "Visualforce",
+        "Chinese (Mandarin, conversational)"
+      ],
+      "zh_languages": [
+        "JavaScript / Typescript",
+        "Terraform",
+        "CSS/SASS",
+        "APEX",
+        "Visualforce",
+        "中文（普通话，会话级别）"
       ],
       "database": ["PostgreSQL", "MySQL"],
+      "zh_database": ["PostgreSQL", "MySQL"],
       "technologies": [
         "Apollo",
         "AI",
@@ -49,6 +69,23 @@
         "Twilio",
         "Webpack"
       ],
+      "zh_technologies": [
+        "Apollo",
+        "人工智能",
+        "AWS",
+        "Docker",
+        "Gatsby",
+        "GraphQL",
+        "Jamstack",
+        "Netlify",
+        "Node",
+        "NX",
+        "React",
+        "Salesforce",
+        "无服务器架构",
+        "Twilio",
+        "Webpack"
+      ],
       "hobbies": [
         "Camping",
         "Cooking",
@@ -61,26 +98,46 @@
         "Vermicomposting",
         "3D Printing",
         "3D Modeling"
+      ],
+      "zh_hobbies": [
+        "露营",
+        "烹饪",
+        "园艺",
+        "焊接",
+        "菌类学",
+        "植物组织培养",
+        "水培",
+        "木工",
+        "蚯蚓堆肥",
+        "3D打印",
+        "3D建模"
       ]
     }
   },
   "projects": [
     {
       "name": "Personal Garden Hydroponics",
-      "notes": "In a collaborative venture with my wife, we purchased an 8000 sq. ft. lot and embarked on transforming it into an urban farm-to-table event space. At the heart of our project is the garden, where I designed and implemented a hydroponics system, responsible for growing our produce for events. This system is driven by a Raspberry Pi, which I programmed to provide real-time control, monitoring, and optimization of the growing conditions. This digital farm management not only ensures the quality and freshness of our produce, but also encapsulates our vision of integrating technology and sustainability in urban agriculture."
+      "zh_name": "个人水培花园",
+      "notes": "In a collaborative venture with my wife, we purchased an 8000 sq. ft. lot and embarked on transforming it into an urban farm-to-table event space. At the heart of our project is the garden, where I designed and implemented a hydroponics system, responsible for growing our produce for events. This system is driven by a Raspberry Pi, which I programmed to provide real-time control, monitoring, and optimization of the growing conditions. This digital farm management not only ensures the quality and freshness of our produce, but also encapsulates our vision of integrating technology and sustainability in urban agriculture.",
+      "zh_notes": "与我的妻子合作，我们购买了一块8000平方英尺的土地，并着手将其改造成一个城市农场到餐桌的活动空间。我们项目的核心是花园，我在那里设计并实施了一个水培系统，负责为活动种植我们的农产品。该系统由树莓派驱动，我编程实现了对生长条件的实时控制、监测和优化。这种数字农场管理不仅确保了我们农产品的质量和新鲜度，还体现了我们将技术和可持续性融入城市农业的愿景。"
     },
     {
       "name": "Mama's Gotchu",
+      "zh_name": "妈妈的厨房",
       "url": "https://app.mamasgotchu.com",
-      "notes": "When COVID19 hit, my chef friends had to shutter their catering business. To survive, they started doing meal deliveries. Operations and customer management was a nightmare and so I led a team of 3 engineers to build out a kitchen operations management web application for them. At its peak we had 60+ customers and regularly delivered ~130 meals every week! Built with Typescript, React, Twilio, Apollo (GraphQL) and Serverless."
+      "notes": "When COVID19 hit, my chef friends had to shutter their catering business. To survive, they started doing meal deliveries. Operations and customer management was a nightmare and so I led a team of 3 engineers to build out a kitchen operations management web application for them. At its peak we had 60+ customers and regularly delivered ~130 meals every week! Built with Typescript, React, Twilio, Apollo (GraphQL) and Serverless.",
+      "zh_notes": "当COVID19爆发时，我的厨师朋友们不得不关闭他们的餐饮业务。为了生存，他们开始提供餐食配送服务。运营和客户管理是一场噩梦，因此我带领一个由3名工程师组成的团队为他们构建了一个厨房运营管理Web应用程序。在巅峰时期，我们拥有60多名客户，每周定期配送约130份餐食！使用Typescript、React、Twilio、Apollo（GraphQL）和Serverless构建。"
     }
   ],
   "experience": [
     {
       "id": 0,
       "title": "Engineering Manager - Foundational Technologies (Platform)",
+      "zh_title": "工程经理 - 基础技术（平台）",
       "location": "Culver City, CA",
+      "zh_location": "加州卡尔弗城",
       "company": "Sweetgreen",
+      "zh_company": "Sweetgreen",
       "duration": {
         "start": "06/2023",
         "end": "Current"
@@ -92,13 +149,24 @@
         "AWS, Datadog, and Github owner for Sweetgreen's AWS account, responsible for all resources and costs.",
         "Responsible for all SRE, DX, Infrastructure, and Monorepo (NX) efforts for Sweetgreen.",
         "Introduced and rolled out CursorAI to the entire engineering team, which increased developer productivity by 30%."
+      ],
+      "zh_accomplishments": [
+        "聘请了2名软件工程师，1名L5和1名L6加入我们的平台团队。在加入团队8个月后将L5晋升为L6，并成为团队成功的关键贡献者。",
+        "监督了我们的CI平台从CircleCI迁移到Github Actions的过程，这显著降低了我们的CI成本并提高了我们的速度。",
+        "促进了工程部门与安全部门+零售技术部门之间的关系，帮助调整优先事项和目标。除了支持我们的软件工程师外，基础技术还支持安全和零售技术团队。",
+        "负责Sweetgreen的AWS、Datadog和Github账户，负责所有资源和成本。",
+        "负责Sweetgreen的所有SRE、DX、基础设施和Monorepo（NX）工作。",
+        "向整个工程团队引入并推广了CursorAI，将开发者生产力提高了30%。"
       ]
     },
     {
       "id": 1,
       "title": "Lead Software Engineer - Foundational Technologies (Platform)",
+      "zh_title": "首席软件工程师 - 基础技术（平台）",
       "location": "Culver City, CA",
+      "zh_location": "加州卡尔弗城",
       "company": "Sweetgreen",
+      "zh_company": "Sweetgreen",
       "duration": {
         "start": "05/2022",
         "end": "06/2023"
@@ -107,13 +175,21 @@
         "Developed a proof-of-concept that demonstrated the potential for utilizing a CRM for managing operations at Sweetgreen, ultimately convincing leadership to adopt the platform. Currently leading the migration efforts",
         "Collaborated with management to identify and address spikes in engineering resource costs (e.g. AWS, CircleCI, Datadog), successfully reducing costs by ~30% while maintaining the same level of developer experience.",
         "Conduct regular workshops to educate engineers on best practices and to introduce new features released by the Foundational Tech team, fostering a culture of continuous learning and improvement. A recent example includes a session on End-to-End (E2E) testing using the Playwright framework, showing engineers how to write tests that simulate user interactions with our application, and how these tests can be run in parallel to reduce test execution time from 2 hours to 10 minutes."
+      ],
+      "zh_accomplishments": [
+        "开发了一个概念验证，展示了利用CRM管理Sweetgreen运营的潜力，最终说服领导层采用该平台。目前正在领导迁移工作。",
+        "与管理层合作识别和解决工程资源成本（例如AWS、CircleCI、Datadog）的突增问题，成功减少了约30%的成本，同时保持相同水平的开发者体验。",
+        "定期举办研讨会，教育工程师最佳实践并介绍基础技术团队发布的新功能，培养持续学习和改进的文化。最近的一个例子包括关于使用Playwright框架进行端到端（E2E）测试的讲座，向工程师展示如何编写模拟用户与我们的应用程序交互的测试，以及如何并行运行这些测试，将测试执行时间从2小时减少到10分钟。"
       ]
     },
     {
       "id": 2,
       "title": "Sr. Software Engineer",
+      "zh_title": "高级软件工程师",
       "location": "Culver City, CA",
+      "zh_location": "加州卡尔弗城",
       "company": "Sweetgreen",
+      "zh_company": "Sweetgreen",
       "duration": {
         "start": "08/2020",
         "end": "05/2022"
@@ -122,13 +198,21 @@
         "Recognized the inefficiencies of having ~300 GitHub repositories and developers working in silos; proposed and led the transition to a monorepo using the NX framework, resulting in a significant increase in engineering velocity and enabling ~10 releases per day, up from once a month. The move to the monorepo also had a significant cultural impact as it was instrumental in helping the engineering team stay positive, productive and collaborative during a turbulent time.",
         "Led the 'replatforming' initiative at Sweetgreen, transitioning from native development (iOS / Android) and the Ember web framework to React Native over a period of ~1 year. This transition not only yielded massive productivity gains for developers but also drastically improved our customer's experience, as evidenced by our Android app rating improving from 1 star to 5 stars in the Google Play Store.",
         "Utilizing the Serverless framework, extracted the most heavily used API, location search, from our monolith backend into its own service. This dramatically reduced latency times for customers searching for a Sweetgreen location, significantly enhancing the customer experience."
+      ],
+      "zh_accomplishments": [
+        "意识到拥有约300个GitHub仓库和开发人员在孤岛中工作的低效率；提出并领导使用NX框架过渡到单一代码库，显著提高了工程速度，使每日发布量从每月一次增加到约10次。向单一代码库的转变也产生了重大的文化影响，在动荡时期帮助工程团队保持积极、高效和协作。",
+        "领导Sweetgreen的'重新平台化'计划，在约1年的时间内从原生开发（iOS/Android）和Ember网络框架过渡到React Native。这一转变不仅为开发人员带来了巨大的生产力提升，还大幅改善了客户体验，我们的Android应用在Google Play商店的评级从1星提升至5星就是明证。",
+        "利用Serverless框架，将使用最频繁的API——位置搜索从我们的单体后端提取到独立服务中。这显著减少了客户搜索Sweetgreen位置的延迟时间，极大地提升了客户体验。"
       ]
     },
     {
       "id": 3,
       "title": "Lead Software Engineer",
+      "zh_title": "首席软件工程师",
       "location": "Downtown Los Angeles, CA",
+      "zh_location": "加州洛杉矶市中心",
       "company": "Tubescience",
+      "zh_company": "Tubescience",
       "duration": {
         "start": "06/2019",
         "end": "08/2022"
@@ -138,13 +222,22 @@
         "Led the development of internal insights web application (built with React, Typescript, and GraphQL) that was pivotal in empowering Creative Strategists to find and replicate top performing ads, which increased client retention and spending; leveraged Hasura to generate a GraphQL endpoint from an existing Postgres infrastructure, exposing Facebook data for the web application to consume.",
         "Introduced and trained engineers in React, GraphQL, Typescript, and Test Driven Development.",
         "Established automated CI/CD pipeline using CircleCI with full end-to-end testing using Cypress.io; increased velocity from 1 deploy a week to ~8 - 10 a week."
+      ],
+      "zh_accomplishments": [
+        "与领导层合作定义工程和产品路线图。运行sprint计划，梳理待办事项，收集需求并撰写工单。通过领导招聘和建立工程最佳实践来发展工程团队。",
+        "领导内部洞察网络应用程序的开发（使用React、Typescript和GraphQL构建），这对帮助创意策略师查找和复制表现最佳的广告至关重要，增加了客户保留率和支出；利用Hasura从现有的Postgres基础设施生成GraphQL端点，暴露Facebook数据供网络应用程序消费。",
+        "向工程师介绍并培训React、GraphQL、Typescript和测试驱动开发。",
+        "使用CircleCI建立自动化CI/CD管道，使用Cypress.io进行全面的端到端测试；将部署速度从每周1次提高到每周约8-10次。"
       ]
     },
     {
       "id": 4,
       "title": "Lead Software Engineer",
+      "zh_title": "首席软件工程师",
       "location": "Downtown Los Angeles, CA",
+      "zh_location": "加州洛杉矶市中心",
       "company": "Tubescience",
+      "zh_company": "Tubescience",
       "duration": {
         "start": "06/2019",
         "end": "Current"
@@ -154,13 +247,22 @@
         "Led the development of internal insights web application (built with React, Typescript, and GraphQL) that was pivotal in empowering Creative Strategists to find and replicate top performing ads, which increased client retention and spending; leveraged Hasura to generate a GraphQL endpoint from an existing Postgres infrastructure, exposing Facebook data for the web application to consume.",
         "Introduced and trained engineers in React, GraphQL, Typescript, and Test Driven Development.",
         "Established automated CI/CD pipeline using CircleCI with full end-to-end testing using Cypress.io; increased velocity from 1 deploy a week to ~8 - 10 a week."
+      ],
+      "zh_accomplishments": [
+        "与领导层合作定义工程和产品路线图。运行sprint计划，梳理待办事项，收集需求并撰写工单。通过领导招聘和建立工程最佳实践来发展工程团队。",
+        "领导内部洞察网络应用程序的开发（使用React、Typescript和GraphQL构建），这对帮助创意策略师查找和复制表现最佳的广告至关重要，增加了客户保留率和支出；利用Hasura从现有的Postgres基础设施生成GraphQL端点，暴露Facebook数据供网络应用程序消费。",
+        "向工程师介绍并培训React、GraphQL、Typescript和测试驱动开发。",
+        "使用CircleCI建立自动化CI/CD管道，使用Cypress.io进行全面的端到端测试；将部署速度从每周1次提高到每周约8-10次。"
       ]
     },
     {
       "id": 5,
       "title": "Lead Software Engineer",
+      "zh_title": "首席软件工程师",
       "location": "West Hollywood, CA",
+      "zh_location": "加州西好莱坞",
       "company": "Wag!",
+      "zh_company": "Wag!",
       "duration": {
         "start": "12/2018",
         "end": "06/2019"
@@ -171,13 +273,23 @@
         "Built the web team 'canary' test suite; ensures back end changes do not adversely affect endpoints the web team uses by automatically testing endpoints and alerting the team of breaking changes",
         "Led the migration from legacy Django web application (wagwalking.com) to GatsbyJS; drastically improving SEO and page performance reducing page load time by more than 300%",
         "Created Wag!'s shared React Component library using React, Styled Components, Styled System, and Lerna with over 80 components and counting"
+      ],
+      "zh_accomplishments": [
+        "领导由5名工程师组成的团队；定义网络工程代码和流程标准；改善北加州和南加州网络工程团队之间的沟通",
+        "提高发布速度的同时减少了发布到生产环境的错误数量；平均每周10次发布，从之前的每周约3次提高",
+        "构建网络团队的'金丝雀'测试套件；通过自动测试端点并在出现破坏性变更时提醒团队，确保后端更改不会对网络团队使用的端点产生不利影响",
+        "领导从遗留Django网络应用程序（wagwalking.com）迁移到GatsbyJS的工作；极大地改善了SEO和页面性能，将页面加载时间减少了300%以上",
+        "使用React、Styled Components、Styled System和Lerna创建了Wag!的共享React组件库，拥有80多个组件且还在增加中"
       ]
     },
     {
       "id": 6,
       "title": "Full Stack Engineer",
+      "zh_title": "全栈工程师",
       "location": "West Hollywood, CA",
+      "zh_location": "加州西好莱坞",
       "company": "Wag!",
+      "zh_company": "Wag!",
       "duration": {
         "start": "07/2018",
         "end": "12/2018"
@@ -187,13 +299,22 @@
         "Completely re-architected legacy React web app, drastically improving stability and customer experience (0 downtime since re-architecture); migrated back end off of Firebase",
         "Built out entire suite of end-to-end tests with Cypress.io for legacy web app",
         "Built out entire CI pipeline in GitLab to facilitate test automation; spins up a local instance of wagWebApp and wagAPI via Docker and runs entire suite of tests. Increased developer confidence and awareness by integrating pipeline results with Slack"
+      ],
+      "zh_accomplishments": [
+        "为网络团队识别机会，帮助iOS和Android团队满足发布期望；在React中构建MVP功能，为Wag!移动应用程序创建网页视图",
+        "完全重新构建了遗留React网络应用，极大地提高了稳定性和客户体验（自重构以来零停机时间）；将后端从Firebase迁移出来",
+        "为遗留网络应用使用Cypress.io构建了整套端到端测试",
+        "在GitLab中构建了整个CI管道以促进测试自动化；通过Docker启动wagWebApp和wagAPI的本地实例并运行整套测试。通过将管道结果与Slack集成，提高了开发人员的信心和意识"
       ]
     },
     {
       "id": 7,
       "title": "Full Stack Engineer",
+      "zh_title": "全栈工程师",
       "location": "Los Angeles, CA",
+      "zh_location": "加州洛杉矶",
       "company": "RealtyMogul.com",
+      "zh_company": "RealtyMogul.com",
       "duration": {
         "start": "01/2017",
         "end": "07/2018"
@@ -205,13 +326,24 @@
         "Worked closely with in-house designers to create and maintain RealtyMogul.com's core UI component library using Storybook; maximizing code reuse, consistency, and team efficiency",
         "Established front-end coding standards and best practices such as Test Driven Development; implemented linters and tests that were automatically run on code commit, which prevented failing code from being introduced to the code base and ultimately, fewer bugs for QA",
         "Overhauled front-end tooling / build system, decreasing front-end code compile time from 10s to ~0.2s and drastically improving developer experience"
+      ],
+      "zh_accomplishments": [
+        "设计并构建了一套微服务，用于摄取和规范化来自多个来源的第三方数据，以及为用户界面提供RESTful API与React交互",
+        "使用Cookiecutter将微服务的创建模板化，以最大化一致性和效率",
+        "管理各种开源前端技术的评估，最终在React、Redux、Redux-Saga和Styled-Components上实施和培训7名工程师的团队",
+        "与内部设计师密切合作，使用Storybook创建和维护RealtyMogul.com的核心UI组件库；最大化代码重用、一致性和团队效率",
+        "建立前端编码标准和最佳实践，如测试驱动开发；实施了在代码提交时自动运行的linter和测试，防止将失败的代码引入代码库，最终减少了QA的错误",
+        "彻底改革了前端工具/构建系统，将前端代码编译时间从10秒降低到约0.2秒，极大地提高了开发人员体验"
       ]
     },
     {
       "id": 8,
       "title": "Salesforce Technical Architect",
+      "zh_title": "Salesforce技术架构师",
       "location": "Los Angeles, CA",
+      "zh_location": "加州洛杉矶",
       "company": "RealtyMogul.com",
+      "zh_company": "RealtyMogul.com",
       "duration": {
         "start": "02/2015",
         "end": "01/2017"
@@ -222,13 +354,23 @@
         "Resolved system-wide synchronization failures between Drupal and Salesforce and improved site performance and reliability by migrating all data synchronizations from synchronous to asynchronous",
         "Built custom GUI for Salesforce Administrators to better control, monitor, and manage the synchronization of data between Drupal and Salesforce",
         "Built custom Round Robin lead distribution system which randomly and fairly assigned new leads across 4 sales teams and over 20 sales representatives; also implemented an administrative interface for Salesforce admins to add and modifying lead distribution rules without requiring dev resources or additional deployments"
+      ],
+      "zh_accomplishments": [
+        "收集了多个跨职能业务组织的需求；使用自定义对象和自定义APEX代码完全重新实现RealtyMogul.com的Salesforce实例，以更好地匹配其独特的业务需求",
+        "建立了Salesforce.com开发和管理最佳实践，以确保长期可维护性和易于定制",
+        "解决了Drupal和Salesforce之间的系统范围内同步失败问题，并通过将所有数据同步从同步迁移到异步来提高站点性能和可靠性",
+        "为Salesforce管理员构建了自定义GUI，以更好地控制、监控和管理Drupal和Salesforce之间的数据同步",
+        "构建了自定义的Round Robin潜在客户分配系统，随机公平地将新的潜在客户分配给4个销售团队和20多名销售代表；还为Salesforce管理员实现了一个管理界面，可以添加和修改潜在客户分配规则，而无需开发资源或额外的部署"
       ]
     }
   ],
   "education": {
     "school": "UC Berkeley",
+    "zh_school": "加州大学伯克利分校",
     "duration": "2008 - 2011",
     "location": "Berkeley, CA",
-    "degree": "BA, Political Economics"
+    "zh_location": "加州伯克利",
+    "degree": "BA, Political Economics",
+    "zh_degree": "学士，政治经济学"
   }
 }

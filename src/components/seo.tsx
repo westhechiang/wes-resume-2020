@@ -8,6 +8,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import { useLanguage } from '../context/LanguageContext';
 
 interface SEOPropsInterface {
   description?: string;
@@ -30,18 +31,34 @@ const SEO: React.FC<SEOPropsInterface> = ({
             title
             description
             author
+            siteUrl
           }
         }
       }
     `,
   );
 
+  const { language } = useLanguage();
   const metaDescription = description || site.siteMetadata.description;
+
+  // Create alternate links for hreflang
+  const alternateLinks = [
+    {
+      rel: 'alternate',
+      hreflang: 'en',
+      href: `${site.siteMetadata.siteUrl}/`,
+    },
+    {
+      rel: 'alternate',
+      hreflang: 'zh',
+      href: `${site.siteMetadata.siteUrl}/`,
+    },
+  ];
 
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang: language || lang,
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
@@ -88,6 +105,11 @@ const SEO: React.FC<SEOPropsInterface> = ({
         href="https://fonts.gstatic.com"
         crossOrigin="anonymous"
       />
+
+      {/* Add alternate language links */}
+      {alternateLinks.map(link => (
+        <link key={link.hreflang} {...link} />
+      ))}
     </Helmet>
   );
 };
@@ -96,6 +118,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  title: ``,
 };
 
 export default SEO;

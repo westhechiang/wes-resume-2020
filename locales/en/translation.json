@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "title": "Engineering Manager - Foundational Technologies (Platform)",
+    "contact": {
+      "email": "Email",
+      "github": "GitHub",
+      "linkedIn": "LinkedIn",
+      "city": "City"
+    },
+    "summary": {
+      "title": "Summary",
+      "highlight": "I'm a leader who is passionate about building happy productive engineering teams, and helping businesses scale"
+    },
+    "skills": {
+      "languages": "Languages",
+      "database": "Database",
+      "technologies": "Technologies",
+      "hobbies": "Hobbies"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "viewProject": "View Project"
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Current"
+  },
+  "education": {
+    "title": "Education",
+    "degree": "Degree"
+  },
+  "language": {
+    "english": "English",
+    "chinese": "中文"
+  },
+  "meta": {
+    "title": "Resume",
+    "description": "Wesley Chiang's professional resume"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "The page you're looking for doesn't exist or has been moved."
+  }
+}

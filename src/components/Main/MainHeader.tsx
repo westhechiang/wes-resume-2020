@@ -15,22 +15,24 @@ export const MainHeader = ({ icon, text }: MainHeaderProps) => (
         justifyContent="center"
         alignItems="center"
         border="1px solid"
-        borderColor="border"
+        borderColor="navy.500"
         borderRadius="50%"
         width="40px"
         height="40px"
+        bg="navy.50"
       >
         <Icon
           border={1}
-          borderColor="border"
+          borderColor="navy.500"
           height="30px"
           name={icon}
           width="30px"
+          color="navy.700"
         />
       </Flex>
     </Box>
-    <Box width="100%" borderBottom="1px solid" borderColor="border" py={1}>
-      <Heading m={0} color="heading" fontSize="3xl">
+    <Box width="100%" borderBottom="2px solid" borderColor="red.500" py={1}>
+      <Heading m={0} color="navy.700" fontSize="3xl" fontWeight="bold">
         {text}
       </Heading>
     </Box>

@@ -13,7 +13,7 @@ import { Projects } from './Projects';
 export const Profile = () => {
   const {
     dataJson: {
-      profile: { name, title, contact, summary, skills },
+      profile: { name, title, zh_title, contact, summary, skills },
     },
   } = useStaticQuery(graphql`
     query {
@@ -25,21 +25,29 @@ export const Profile = () => {
             chineseName
           }
           title
+          zh_title
           contact {
             email
             github
             linkedIn
             city
+            zh_city
           }
           summary {
             highlight
+            zh_highlight
             details
+            zh_details
           }
           skills {
             languages
+            zh_languages
             database
+            zh_database
             technologies
+            zh_technologies
             hobbies
+            zh_hobbies
           }
         }
       }
@@ -49,7 +57,7 @@ export const Profile = () => {
     <Stack direction="column" spacing={4}>
       <ProfileImage />
       <ProfileName {...name} />
-      <ProfileTitle title={title} />
+      <ProfileTitle title={title} zh_title={zh_title} />
       <ProfileContact contact={contact} />
       <ProfileSummary {...summary} />
       <ProfileSkills skills={skills} />

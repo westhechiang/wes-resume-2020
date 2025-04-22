@@ -3,8 +3,12 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { Text, Flex } from '@chakra-ui/core';
 import { MainHeader } from './MainHeader';
 import { WorkExperienceHeader } from './WorkExperienceHeader';
+import { useLanguage } from '../../context/LanguageContext';
 
 export const WorkExperience = () => {
+  const { language, t } = useLanguage();
+  const isZh = language === 'zh';
+
   const {
     dataJson: { experience: experiences },
   } = useStaticQuery(graphql`
@@ -13,6 +17,7 @@ export const WorkExperience = () => {
         experience {
           id
           title
+          zh_title
           location
           company
           duration {
@@ -20,15 +25,25 @@ export const WorkExperience = () => {
             end
           }
           accomplishments
+          zh_accomplishments
         }
       }
     }
   `);
 
+  const experienceTitle = t('experience.title', 'Work Experience');
+
   return (
     <Flex width="100%" height="100%" flexDirection="column" px={3} pt={3}>
-      <MainHeader icon="work" text="Work Experience" />
+      <MainHeader icon="work" text={experienceTitle} />
       {experiences.map((experience, index) => {
+        const title =
+          isZh && experience.zh_title ? experience.zh_title : experience.title;
+        const accomplishments =
+          isZh && experience.zh_accomplishments
+            ? experience.zh_accomplishments
+            : experience.accomplishments;
+
         return (
           <Flex
             key={experience.id}
@@ -36,20 +51,21 @@ export const WorkExperience = () => {
             pb={experiences.length - 1 === index ? 0 : 3}
           >
             <WorkExperienceHeader
-              title={experience.title}
+              title={title}
               location={experience.location}
               company={experience.company}
               duration={experience.duration}
+              isZh={isZh}
             />
             <Flex flexDirection="column">
-              {experience.accomplishments.map(accomplishment => {
+              {accomplishments.map((accomplishment, idx) => {
                 return (
                   <Flex
-                    key={accomplishment}
+                    key={`${experience.id}-accomp-${idx}`}
                     alignItems="center"
                     justifyContent="flex-start"
                     borderLeft="3px solid"
-                    borderColor="accent"
+                    borderColor="red.500"
                     mb={2}
                   >
                     <Text
@@ -57,7 +73,7 @@ export const WorkExperience = () => {
                       fontSize="xs"
                       m={0}
                       pl={1}
-                      color="body"
+                      color="gray.700"
                     >
                       {accomplishment}
                     </Text>

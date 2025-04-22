@@ -1,22 +1,32 @@
+import { Text } from '@chakra-ui/core';
 import * as React from 'react';
-import { Flex, Text } from '@chakra-ui/core';
+import { useLanguage } from '../../context/LanguageContext';
 
 export interface ProfileTitleProps {
   title: string;
+  zh_title?: string;
 }
 
-export const ProfileTitle = ({ title }: ProfileTitleProps) => (
-  <Flex width="100%" flexDirection="column" alignItems="center" mb={4}>
+export const ProfileTitle = ({ title, zh_title }: ProfileTitleProps) => {
+  const { language, t } = useLanguage();
+  const isZh = language === 'zh';
+
+  // Use Chinese title if available and in Chinese mode, otherwise use translated title from i18n, or fallback to provided title
+  const displayTitle = isZh && zh_title ? zh_title : t('profile.title', title);
+
+  return (
     <Text
+      color="navy.700"
       fontFamily="heading"
+      fontWeight="bold"
       textAlign="center"
-      fontSize="xl"
-      lineHeight={1}
-      fontWeight={600}
-      color="body"
-      textTransform="capitalize"
+      width="100%"
     >
-      {title}
+      {displayTitle}
     </Text>
-  </Flex>
-);
+  );
+};
+
+ProfileTitle.defaultProps = {
+  zh_title: undefined,
+};

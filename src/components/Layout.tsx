@@ -7,8 +7,15 @@ import { Blurb } from './Blurb';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { LanguageProvider } from '../context/LanguageContext';
 
-// Correct path for Gatsby static assets
-const backgroundImage = '/images/bg.png';
+// Ensure static assets are loaded without query parameters
+const getStaticAssetUrl = (path: string): string => {
+  // Remove any existing query parameters and ensure path starts with /
+  const cleanPath = path.split('?')[0];
+  return cleanPath.startsWith('/') ? cleanPath : `/${cleanPath}`;
+};
+
+// Background image path
+const backgroundImage = getStaticAssetUrl('images/bg.png');
 
 export const Layout: React.FC<BoxProps> = ({ children, ...rest }) => (
   <ThemeProvider theme={theme}>

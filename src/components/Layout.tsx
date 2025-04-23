@@ -1,16 +1,18 @@
 import * as React from 'react';
 
-import { ThemeProvider, Flex, BoxProps } from '@chakra-ui/core';
+import { CSSReset, Flex, BoxProps } from '@chakra-ui/core';
+import { ThemeProvider } from 'emotion-theming';
 import { theme } from '../theme';
 import { Blurb } from './Blurb';
-import LanguageSwitcher from './LanguageSwitcher';
+import { LanguageSwitcher } from './LanguageSwitcher';
 import { LanguageProvider } from '../context/LanguageContext';
 
-// Use the existing background image
+// Correct path for Gatsby static assets
 const backgroundImage = '/images/bg.png';
 
-export const Layout = ({ children }: BoxProps) => (
+export const Layout: React.FC<BoxProps> = ({ children, ...rest }) => (
   <ThemeProvider theme={theme}>
+    <CSSReset />
     <LanguageProvider>
       <LanguageSwitcher />
       <Flex
@@ -35,6 +37,7 @@ export const Layout = ({ children }: BoxProps) => (
         justifyContent="center"
         alignItems="center"
         flexDirection="column"
+        {...rest}
       >
         <Flex>{children}</Flex>
         <Blurb />

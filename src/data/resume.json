@@ -6,8 +6,8 @@
       "nickName": "Wes",
       "chineseName": "江唯豪"
     },
-    "title": "Engineering Manager - Foundational Technologies (Platform)",
-    "zh_title": "工程经理 - 基础技术（平台）",
+    "title": "Engineering Manager - Platform",
+    "zh_title": "工程经理 - 平台",
     "contact": {
       "email": "westhechiang@gmail.com",
       "github": "https://bit.ly/2zrvjiH",
@@ -132,8 +132,8 @@
   "experience": [
     {
       "id": 0,
-      "title": "Engineering Manager - Foundational Technologies (Platform)",
-      "zh_title": "工程经理 - 基础技术（平台）",
+      "title": "Engineering Manager - Platform",
+      "zh_title": "工程经理 - 平台",
       "location": "Culver City, CA",
       "zh_location": "加州卡尔弗城",
       "company": "Sweetgreen",
@@ -161,8 +161,8 @@
     },
     {
       "id": 1,
-      "title": "Lead Software Engineer - Foundational Technologies (Platform)",
-      "zh_title": "首席软件工程师 - 基础技术（平台）",
+      "title": "Lead Software Engineer - Platform",
+      "zh_title": "首席软件工程师 - 平台",
       "location": "Culver City, CA",
       "zh_location": "加州卡尔弗城",
       "company": "Sweetgreen",

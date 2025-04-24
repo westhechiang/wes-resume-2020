@@ -19,7 +19,9 @@ export const ProfileTitle = ({ title, zh_title }: ProfileTitleProps) => {
       color="navy.700"
       fontFamily="heading"
       fontWeight="bold"
+      fontSize="xl"
       textAlign="center"
+      py={2}
       width="100%"
     >
       {displayTitle}

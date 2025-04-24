@@ -5,6 +5,20 @@ import { MainHeader } from './MainHeader';
 import { WorkExperienceHeader } from './WorkExperienceHeader';
 import { useLanguage } from '../../context/LanguageContext';
 
+interface Experience {
+  id: string;
+  title: string;
+  zh_title?: string;
+  location: string;
+  company: string;
+  duration: {
+    start: string;
+    end: string;
+  };
+  accomplishments: string[];
+  zh_accomplishments?: string[];
+}
+
 export const WorkExperience = () => {
   const { language, t } = useLanguage();
   const isZh = language === 'zh';
@@ -36,7 +50,7 @@ export const WorkExperience = () => {
   return (
     <Flex width="100%" height="100%" flexDirection="column" px={3} pt={3}>
       <MainHeader icon="work" text={experienceTitle} />
-      {experiences.map((experience, index) => {
+      {experiences.map((experience: Experience, index: number) => {
         const title =
           isZh && experience.zh_title ? experience.zh_title : experience.title;
         const accomplishments =
@@ -58,28 +72,26 @@ export const WorkExperience = () => {
               isZh={isZh}
             />
             <Flex flexDirection="column">
-              {accomplishments.map((accomplishment, idx) => {
-                return (
-                  <Flex
-                    key={`${experience.id}-accomp-${idx}`}
-                    alignItems="center"
-                    justifyContent="flex-start"
-                    borderLeft="3px solid"
-                    borderColor="red.500"
-                    mb={2}
+              {accomplishments.map((accomplishment: string) => (
+                <Flex
+                  key={`${experience.id}-${accomplishment}`}
+                  alignItems="center"
+                  justifyContent="flex-start"
+                  borderLeft="3px solid"
+                  borderColor="red.500"
+                  mb={2}
+                >
+                  <Text
+                    fontFamily="body"
+                    fontSize="xs"
+                    m={0}
+                    pl={1}
+                    color="gray.700"
                   >
-                    <Text
-                      fontFamily="body"
-                      fontSize="xs"
-                      m={0}
-                      pl={1}
-                      color="gray.700"
-                    >
-                      {accomplishment}
-                    </Text>
-                  </Flex>
-                );
-              })}
+                    {accomplishment}
+                  </Text>
+                </Flex>
+              ))}
             </Flex>
           </Flex>
         );

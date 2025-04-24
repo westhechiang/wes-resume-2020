@@ -23,7 +23,12 @@ export const ProfileContact = ({ contact }: ProfileContactProps) => {
   });
 
   return (
-    <Flex flexDirection="column" width={[200, 200, '100%']} alignItems="center">
+    <Flex
+      flexDirection="column"
+      width={[200, 200, '100%']}
+      alignItems="center"
+      py={3}
+    >
       {displayContact.map(([key, value]) => {
         // Get label translation for the field
         const label = t(`profile.contact.${key}`, key);

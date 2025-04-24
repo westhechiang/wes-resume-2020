@@ -41,10 +41,10 @@ export const theme = {
     body: 'Raleway, Helvetica, Arial',
   },
   fontSizes: {
-    xs: '12px',
-    sm: '14px',
+    xs: '16px',
+    sm: '16px',
     md: '16px',
-    lg: '18px',
+    lg: '20px',
     xl: '20px',
     '2xl': '24px',
     '3xl': '28px',

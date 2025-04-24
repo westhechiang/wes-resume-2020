@@ -47,10 +47,11 @@ export const Layout: React.FC<BoxProps> = ({ children, ...rest }) => (
         justifyContent="center"
         alignItems="center"
         flexDirection="column"
+        p={[3, 4, 5]}
         {...rest}
       >
         <Flex>{children}</Flex>
-        <Blurb />
+        {/* <Blurb /> */}
       </Flex>
     </LanguageProvider>
   </ThemeProvider>

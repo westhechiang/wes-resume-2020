@@ -13,7 +13,7 @@ export const ProfileName = ({
   lastName,
   chineseName,
 }: ProfileNameProps) => (
-  <Flex width="100%" flexDirection="column" alignItems="center" py={4}>
+  <Flex width="100%" flexDirection="column" alignItems="center" py={2}>
     <Text
       fontFamily="heading"
       fontSize="3xl"
